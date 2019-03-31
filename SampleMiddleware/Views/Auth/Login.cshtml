@@ -1,0 +1,22 @@
+﻿
+@model LoginModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+</head>
+<body>
+    <div style="width:800px; text-align:center; margin:0 auto;">
+        <form asp-action="Login" method="post">
+            <p>Your name: <input asp-for="Name" /></p>
+            <p><button type="submit">Login</button></p>
+        </form>
+    </div>
+</body>
+</html>
